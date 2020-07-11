@@ -2,6 +2,8 @@
 //QUE ES????
 //IMPORTANTE NUNCA MAS VAMOS A USAR VAR !!!!!!!!!!!!!!!!
 
+// palabra reservada var - NO USAR NUNCA MAS!!!
+
 //GLOBAL
 let miVariableSuperImportante = 'Soy global';
 
@@ -235,6 +237,7 @@ for (const num of arrayNum) {
 console.log(arrayNum);
 
 console.log('\n');
+
 console.log(' ---------- PASS BY VALUE / PASS BY REFERENCE ---------');
 
 //PASS BY VALUE / PASS BY REFERENCE
