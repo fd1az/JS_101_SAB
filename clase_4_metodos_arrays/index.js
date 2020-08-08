@@ -452,7 +452,7 @@ let numerosArray = [2, 0, 1, 8, 9, 11, 3, 75, 90, 101];
 console.log(numerosArray.sort());
 
 console.log(numerosArray.sort((a, b) => a - b)); //ORDEN ASCENDENTE
-console.log(numerosArray.sort((a, b) => b - a)); //ORDEN ASCENDENTE
+console.log(numerosArray.sort((a, b) => b - a)); //ORDEN DESCENDENTE
 
 console.log('\n');
 console.log('----------- REDUCE -------------');
@@ -510,7 +510,7 @@ let total4 = numObj2.reduce((acc, currentValue) => {
 
 console.log('[Con reduce] :', total4);
 
-// OK FUNCIONA V2
+// OK FUNCIONA V3
 
 let total5 = numObj2.reduce(
   (acc, currentValue) => {
