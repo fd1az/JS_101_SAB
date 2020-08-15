@@ -151,3 +151,8 @@ form input[type='email'] {
   margin: 15px 0px;
   padding: 0;
 }
+
+form select {
+  width: 100px;
+  height: 60px;
+}
