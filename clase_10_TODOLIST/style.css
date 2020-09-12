@@ -190,7 +190,7 @@ body {
 }
 .todos-list li input[type='text'] {
   order: 2;
-  width: 88%;
+  width: 100%;
   padding: 0 0 0 50px;
   border: none;
   outline: 0;
