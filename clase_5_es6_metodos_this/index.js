@@ -1,23 +1,23 @@
 //!Valores por default en FUNCIONES
-console.log("------ Valore por default en Parametros ----");
-console.log("\n ");
+console.log('------ Valore por default en Parametros ----');
+console.log('\n ');
 
 const sum = (a, b) => {
   return a + b;
 };
 
-console.log("[FUNC SUM EL PROBLEMA]", sum(5));
+console.log('[FUNC SUM EL PROBLEMA]', sum(5));
 
-console.log("\n ");
+console.log('\n ');
 
 const sum2 = (a = 1, b = 0) => {
   return a + b;
 };
 
-console.log("[FUNC SUM LA SOLUCION]", sum2(5));
+console.log('[FUNC SUM LA SOLUCION]', sum2(5));
 
-console.log("\n ");
-console.log("------ SPREAD ----");
+console.log('\n ');
+console.log('------ SPREAD ----');
 
 //SPREAD = EXPANDIR
 ///La sintaxis extendida o spread sintax permite a un elemento iterable tal como un arreglo o cadena ser expandido en lugares donde cero o más argumentos (para llamadas de  función) ó elementos (para Array literales) son esperados, o a un objeto ser expandido en lugares donde cero o más pares de valores clave (para literales Tipo Objeto) son esperados.
@@ -26,7 +26,7 @@ console.log("------ SPREAD ----");
 let arr1 = [1, 2, 3, 4, 5]; //0x123123123124124
 let arr2 = [6, 7, 8, 9, 10];
 let todoJunto = [...arr1, ...arr2];
-console.log("[todoJunto]", todoJunto);
+console.log('[todoJunto]', todoJunto);
 
 let copyArray = [...arr1];
 copyArray.push(10);
@@ -35,7 +35,7 @@ console.log(arr1);
 console.log(copyArray);
 
 //SPREAD CON STRING
-let soyUnString = "Hola como estas";
+let soyUnString = 'Hola como estas';
 let soyArrDeString = [...soyUnString];
 
 console.log(soyArrDeString);
@@ -44,25 +44,25 @@ console.log(soyArrDeString);
 
 const auto = {
   ruedas: 4,
-  carroceria: "metal",
+  carroceria: 'metal',
   motor: true,
 };
 
 const sedan = {
   ...auto,
   puertas: 4,
-  tipo: "familiar",
+  tipo: 'familiar',
 };
 
 const ford = {
   ...sedan,
-  marca: "Ford",
+  marca: 'Ford',
 };
 
 let chevy = {
   ...ford,
-  combustible: "nafta",
-  marca: "chevrolet",
+  combustible: 'nafta',
+  marca: 'chevrolet',
 };
 
 chevy = {
@@ -73,10 +73,10 @@ chevy = {
 console.log(chevy);
 
 const orden = {
-  id: "ñalshdpsadkjhasdjgha4209834s",
+  id: 'ñalshdpsadkjhasdjgha4209834s',
   monto: 500,
   direccion: {
-    calle: "Rivadavia",
+    calle: 'Rivadavia',
     numero: 123,
   }, //0x0012
 }; //0x0001
@@ -85,10 +85,10 @@ const copyOrden = {
   ...orden,
 }; //0x0002
 
-console.log("[Check copia de orden]", copyOrden === orden);
+console.log('[Check copia de orden]', copyOrden === orden);
 
 console.log(
-  "[Y el objeto direccion????]",
+  '[Y el objeto direccion????]',
   copyOrden.direccion === orden.direccion
 );
 
@@ -100,12 +100,12 @@ const copyOrden2 = {
 };
 
 console.log(
-  "[Y AHORA???? el objeto direccion????]",
+  '[Y AHORA???? el objeto direccion????]',
   copyOrden2.direccion === orden.direccion
 );
 
-console.log("\n ");
-console.log("------ REST ----");
+console.log('\n ');
+console.log('------ REST ----');
 
 function imprimirArgumentos(a, b, c) {
   console.log(arguments);
@@ -141,13 +141,13 @@ const imprimirSaludos = (...args) => {
 };
 
 imprimirSaludos(
-  "hola",
-  "hello",
-  "Privet",
-  "hola2",
-  "laksjdlkasjd",
-  "alsdjalisjd",
-  "laskjdlaksjd"
+  'hola',
+  'hello',
+  'Privet',
+  'hola2',
+  'laksjdlkasjd',
+  'alsdjalisjd',
+  'laskjdlaksjd'
 );
 
 const sumatoria = (...args) => {
@@ -158,16 +158,16 @@ console.log(
   sumatoria(5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5)
 );
 
-console.log("\n ");
-console.log("------  Destructuring arrays/Object ----");
+console.log('\n ');
+console.log('------  Destructuring arrays/Object ----');
 //DESTRUCTURANTE array/obj == Destructuring arrays/obj
 let marvel = [
-  "Iron Man",
-  "Capitan America",
-  "Thor",
-  "Hulk",
-  "Black Widow",
-  "Falcon",
+  'Iron Man',
+  'Capitan America',
+  'Thor',
+  'Hulk',
+  'Black Widow',
+  'Falcon',
 ];
 
 //Lectura de valores de los arrays (Tradicional)
@@ -181,9 +181,9 @@ console.log(hulk);
 console.log(falcon);
 
 const book = {
-  autor: "J.R.R Talkien",
-  titulo: "El Señor De Los Anillos",
-  tapa: "dura",
+  autor: 'J.R.R Talkien',
+  titulo: 'El Señor De Los Anillos',
+  tapa: 'dura',
   medida: {
     alto: 50,
     ancho: 150,
@@ -223,8 +223,8 @@ const estadisticas = (arr) => {
 console.log(estadisticas([5, 1, 10, 11, 38, 10, 60]));
 
 //Computed Properties
-const AsignacionDinamicaDePropiedad = "lorenzolamas";
-const ValorDinamicoDeLaPropiedadDinamica = "El Renegado";
+const AsignacionDinamicaDePropiedad = 'lorenzolamas';
+const ValorDinamicoDeLaPropiedadDinamica = 'El Renegado';
 
 const obj = {
   admin: ValorDinamicoDeLaPropiedadDinamica,
@@ -244,13 +244,13 @@ const team2 = {
   [AsignacionDinamicaDePropiedad]: ValorDinamicoDeLaPropiedadDinamica,
 };
 
-console.log("[Obj team2]", team2);
-console.log("[Obj team2.lorenzolamas]", team2.lorenzolamas);
+console.log('[Obj team2]', team2);
+console.log('[Obj team2.lorenzolamas]', team2.lorenzolamas);
 
-console.log("\n ");
+console.log('\n ');
 
-console.log("\n ");
-console.log("------  Metodos Objetos ----");
+console.log('\n ');
+console.log('------  Metodos Objetos ----');
 
 const doMath = {
   sumar: function (a, b) {
@@ -297,7 +297,7 @@ function fn() {
 }
 
 const perro = {
-  sonido: "GUAF GUAF",
+  sonido: 'GUAF GUAF',
   ladrar: () => {
     console.log(this.sonido);
   },
@@ -306,8 +306,8 @@ const perro = {
 perro.ladrar();
 
 const alumno = {
-  nombre: "Victor",
-  apellido: "Calabro",
+  nombre: 'Victor',
+  apellido: 'Calabro',
   notas: {
     algebra: 5,
     filosofia: 10,
